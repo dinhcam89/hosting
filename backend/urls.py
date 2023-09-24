@@ -32,7 +32,7 @@ schema_view = get_schema_view(
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', include('onlineshop.urls')),
     path('swagger/schema/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-schema'),
    
